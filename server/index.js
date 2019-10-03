@@ -1,6 +1,6 @@
 const keys = require('./keys');
 
-// Express App Setup
+// Express App Setup.
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// Postgres Client Setup
+// Postgres Client Setup.
 const { Pool } = require('pg');
 const pgClient = new Pool({
   user: keys.pgUser,
